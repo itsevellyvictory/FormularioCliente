@@ -9,7 +9,7 @@
 <style>
      body{
          font-family: Arial, Helvetica, sans-serif;
-         background-color:rgb(196, 93, 255);
+         background-image: linear-gradient(to right,rgb(89, 0, 172), rgb(187, 28, 219));
      }
      .box{
          position: absolute;
@@ -20,7 +20,7 @@
          padding: 15px;
          border-radius: 15px;
          width: 20%;
-         color: white;
+         color: rgba(255, 255, 255, 0.856);
      }
      fieldset{
          border: 3px, solid, rgb(201, 204, 36);
@@ -46,6 +46,26 @@
        width: 100%;
        letter-spacing: 2px;
    }
+   #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+        #submit{
+            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+        }
 </style>
 <body>
     
@@ -57,43 +77,44 @@
             <br>
             <div class="inputBox">
                 <input type="text" name="nome" id="nome" class="inputUser" required/>
-                <label for="nome">Nome Completo</label>
+                <label for="nome" class="labelInput">Nome Completo</label>
                 <br>
                 <br>
                 <input type="e-mail" name="e-mail" id="e-mail" class="inputUser" required/>
-                <label for="e-mail">E-mail</label>
+            
+                <label for="e-mail" class="labelInput">E-mail</label>
                 <br>
                 <br>
                 <input type="telefone" name="telefone" id="telefone" class="inputUser" required/>
-                <label for="telefone">Telefone</label> 
+                <label for="telefone"class="labelInput">Telefone</label> 
 
             </div>
             <br>
                <p>Sexo:</p>
                <input type="radio" name="sexo" value="femenino" required/>
-               <label for="sexo">Femenino</label>
+               <label for="sexo" class="labelInput">Femenino</label>
                <br>
                <input type="radio" name="sexo" value="masculino" required/>
-               <label for="sexo">Masculino</label>
+               <label for="sexo" class="labelInput">Masculino</label>
                <br>
                <div class="inputBox">
                 <br>
-                <label for="data_nascimento"><b>Data de Nascimento:</b</label>
-                <input type="date" name="data_nascimento" id="data_nascimento" class="inputUser" required/>
+                <label for="data_nascimento" class="labelInput"><b>Data de Nascimento:</b</label>
+                <input type="date" name="data_nascimento" id="data_nascimento"  required/>
                 <br>
                </div>
                <div class="inputBox">
                 <br>
                 <input type="text" name="cidade" id="cidade" class="inputUser" required/>
-                <label for="cidade">Cidade</label>
+                <label for="cidade" class="labelInput">Cidade</label>
                 <br>
                 <br>
                 <input type="text" name="estado" id="estado" class="inputUser" required/>
-                <label for="estado">Estado</label>
+                <label for="estado"class="labelInput">Estado</label>
                 <br>
                 <br>
                 <input type="text" name="endereco" id="endereco" class="inputUser" required/>
-                <label for="endereco">Endereço</label>
+                <label for="endereco" class="labelInput">Endereço</label>
                 <br>
                </div>
                <br>
